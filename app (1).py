@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 model = pickle.load(open("heart_model.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
+scaler = pickle.load(open("scaler (1).pkl", "rb"))
 
 st.title("❤️ Heart Disease Prediction")
 
