@@ -1,9 +1,16 @@
 import streamlit as st
 import pickle
 import numpy as np
+import os
+import pickle
 
-model = pickle.load(open("heart_model.pkl", "rb"))
-scaler = pickle.load(open("scaler (1).pkl", "rb"))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(BASE_DIR, "heart_model.pkl"), "rb") as f:
+    model = pickle.load(f)
+
+with open(os.path.join(BASE_DIR, "scaler.pkl"), "rb") as f:
+    scaler = pickle.load(f)
 
 st.title("❤️ Heart Disease Prediction")
 
