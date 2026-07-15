@@ -1,0 +1,11 @@
+requirements = """streamlit
+scikit-learn
+pandas
+numpy
+joblib
+"""
+
+with open("requirements.txt", "w") as f:
+    f.write(requirements)
+
+print("requirements.txt created successfully!")
